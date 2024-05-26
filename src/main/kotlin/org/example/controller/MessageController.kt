@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class MessageController(val service: MessageService) {
     @GetMapping("/")
-    fun index(): List<Message> = service.findMessages()
+    fun getMessages(): List<Message> = service.findMessages()
 
     @GetMapping("/{id}")
     fun getMessageById(@PathVariable id: String): List<Message> = service.findMessageById(id)

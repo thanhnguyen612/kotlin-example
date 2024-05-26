@@ -1,0 +1,31 @@
+### Post "Hello!"
+POST http://localhost:8081/
+Content-Type: application/json
+
+{
+  "text": "Hello!"
+}
+
+### Post "Bonjour!"
+
+POST http://localhost:8081/
+Content-Type: application/json
+
+{
+  "text": "Bonjour!"
+}
+
+### Post "Privet!"
+
+POST http://localhost:8081/
+Content-Type: application/json
+
+{
+  "text": "Privet!"
+}
+
+### Get all the messages
+GET http://localhost:8081/
+
+### Get the messages by id
+GET http://localhost:8081/3b05ebbe-a44d-4866-9202-3956bc5548f9
